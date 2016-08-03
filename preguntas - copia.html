@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Preguntas</title>
+	<link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+	<meta charset="utf-8">
+    <script type="text/javascript" src="js/javaScript.js"></script>
+</head>
+<body>
+
+<nav>
+		<ul>
+			<li> <a href="#">¿Qué son los derechos humanos?</a> </li>
+			<li id="dos_nav"> <a href="#">¿Cuando se violan mis derechos?</a> </li>
+		</ul>
+	</nav>
+	<header id="cabecera">
+		<figure id="logo">
+			<a href="index.html"><img src="img/logo.png"/></a>
+		</figure>
+		<h1 id="titulo">LOS DERECHOS HUMANOS</h1>
+	</header>
+    <section>
+        <h1 id="encabezado">
+          ¿Conoces cuales son tus derechos?
+        </h1>
+
+
+        <article>
+            <!--Este es el div de la vaca-->
+
+            <div id="contPreg">
+
+                <table>
+                    <tr>
+                        <td>
+                            <div id="izq" onclick="displayQuestion()"><img src="img/principal/f_izq.png" id="img_izq"></div>
+                        </td>
+                        <td>
+                        <table width="466" height="477" border="0" align="center" background="img/principal/fondo_vaca.png">
+                        <tr height="160">
+                            <td>
+                                <div>
+                                    <p></p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr height="133">
+                            <td> 
+                            <div id="preg1">                        
+                                <h1 class="enun_pregs">¿Alguna vez te has sentido rechazado?</h1> <br>
+                                <select id="response1">
+                                <option>Escoger</option>
+                                  <option value="0">Sí</option>
+                                  <option value="1">No</option>                     
+                                </select>
+                            </div>
+                             <div id="preg2" class="pregun">                      
+                                <h1 class="enun_pregs">¿Te sientes desprotegido?</h1> <br>
+                                <select id="response2">
+                                <option>Escoger</option>
+                                  <option value="0">Sí</option>
+                                  <option value="1">No</option> 
+                                </select>
+                            </div>
+                            <div id="preg3" class="pregun">
+                                <h1 class="enun_pregs">¿Te sientes rechazado por los habitantes de este país?</h1> <br>
+                                <select id="response3">
+                                <option>Escoger</option>
+                                 <option value="0">Sí</option>
+                                  <option value="1">No</option> 
+                                </select>
+                            </div>
+                            <div id="preg4" class="pregun">
+                                <h1 class="enun_pregs">¿Algún día te han negado la comida?</h1> <br>
+                                <select id="response4">
+                                <option>Escoger</option>
+                                  <option value="0">Sí</option>
+                                  <option value="1">No</option>
+                                </select>
+                            </div>
+                            <div id="preg5" class="pregun">
+                                <h1 class="enun_pregs">¿Te niegan ir a la escuela?</h1> <br>
+                                <select id="response5">
+                                <option>Escoger</option>
+                                  <option value="0">Sí</option>
+                                  <option value="1">No</option>
+                                </select>
+                            </div>
+                            <div id="preg6" class="pregun">
+                                <h1 class="enun_pregs">¿Te impiden recrearte?</h1><br>
+                                <select id="response6">
+                                <option>Escoger</option>
+                                  <option value="0">Sí</option>
+                                  <option value="1">No</option> 
+                                </select>
+                            </div>
+                            <div id="preg7" class="pregun">
+                                <h1 class="enun_pregs">¿Eres ignorado en situaciones de peligro?</h1> <br>
+                                <select id="response7">
+                                <option>Escoger</option>
+                                  <option value="0">Sí</option>
+                                  <option value="1">No</option> 
+                                </select>
+                            </div>
+                            <div id="preg8" class="pregun">
+                                <h1 class="enun_pregs">¿Te obligan o necesitas trabajar para ganar dinero?</h1> <br>
+                                <select id="response8">
+                                <option>Escoger</option>
+                                  <option value="0">Sí</option>
+                                  <option value="1">No</option>
+                                </select>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                 <div>
+                                     <p></p>
+                                 </div>
+                            </td>
+                        </tr>
+                    </table>
+                    </td>
+                        <td>
+                            <div id="der" onclick="detectarClic()"><img src="img/principal/f_der.png"></div> 
+                        </td>
+                    </tr>
+                </table>  	        
+
+                <button id="enviar" onclick="respuesta()">Consultar</button><br><br>
+             
+                <div id="respuesta">   
+                   
+                </div>
+
+                <div id="recomendacion">
+                    
+                </div>
+
+            </article>
+        </section>
+        <div id="nav_dos">
+                <a href="#">¿Qué son los derechos humanos?</a><br>
+                <a href="#">¿Cuando se violan mis derechos?</a>
+            </ul>
+        </div>
+	<footer>
+        <div id="esc_unicor">
+            <img src="img/escudo1.png">
+        </div>
+        <div id="creditos">
+    		<p>Diseño de Software Educativo</p>
+            <p>Docente: Manuel Caro Piñeres</p>
+            <p>Universidad de Córdoba - Colombia</p>
+        </div>
+	</footer>
+
+</body>
+</html>
