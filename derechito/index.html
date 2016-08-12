@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Derechos humanos</title> 
+  <!--<link rel="stylesheet" type="text/css" href="estilos/normalize.css" /> -->
+  <link rel="stylesheet" type="text/css" href="estilos/estilos.css" />
+  <script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+	<header class="cabecera"> 
+		<a href="index.html">
+			<figure id="logo">
+				<img src="img/logo.png">
+			</figure>			
+			<h1 class="titulo">Sachild</h1>
+		</a>
+	</header>
+	<section>
+		
+		<div id="nav">
+			<a id="atras"><img src="img/smartphone/atras.png"  onclick="retroceder()"></a>
+			<p id="descripcion"></p>
+			<p id="adelante" onclick="avanzar()">Siguiente</p>
+		</div>
+
+		<div id="opciones-mini">
+		    <div class="cont-image">
+			  	<img src="img/main2.png">
+			</div>
+			<div id="opciones">			
+				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </h4>
+				<div class="edu" id="iniciar_mini" onclick="iniciar_mini()">
+					
+				</div>
+				<div class="edu" id="cuento_mini">
+					
+				</div>
+				<div class="edu" id="ayuda_mini">
+				
+				</div>
+		    </div>
+		</div>   
+
+
+
+		   <!--     Opciones en móviles (tabletas) 		 -->
+
+	    <div id="opc_tablet">
+	    	<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. </h4>
+
+	  		<div class="item" id="iniciar-tablet" onclick="iniciar_test_tablet()">
+	  			<img src="img/iniciar.png">
+	  			<p class="p">INICIAR</p>
+	  		</div>	  			
+	  		<div class="item" id="cuento-tablet">
+	  		<img src="img/cuento.png">
+	  			<p class="p">CUENTO</p>
+	  		</div>
+
+	  		<div class="item" id=" ayuda-tablet">
+	  		<img src="img/ayuda.png">
+	  			<p class="p">AYUDA</p>
+	  		</div>	  		
+		</div>
+
+		<!--    Opciones Smartphone          -->
+
+		<div id="smart">
+			<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. </h4>
+			<div class="opc-smart" id="iniciar-smart" onclick="iniciar_test_smart()">
+				<p class="p-smart">INICIAR</p>
+				<img src="img/smartphone/iniciar.png">
+			</div>
+				<div class="opc-smart" id="cuento-smart">
+					<p>CUENTO</p>
+					<img src="img/smartphone/cuento.png">
+				</div>
+				<div class="opc-smart" id="ayuda-smart">
+					<p>AYUDA</p>
+					<img src="img/smartphone/ayuda.png">
+				</div>
+		</div>
+		
+			<div id="preg1" class="pregun">                        
+                <h1 class="enun_pregs">¿Alguna vez te has sentido rechazado?1</h1> <br>
+                <!--Sí <input type="checkbox"><br/>
+                No <input type="checkbox">-->
+                <select id="response1">
+                  <option>Escoger</option>
+                  <option value="0">Sí</option>
+                  <option value="1">No</option>                     
+                </select>
+                <div id="flechas">
+	                <img src="img/pc_mini/atras.png" id="atras_mini">
+	                <img src="img/pc_mini/adelante.png" id="adelante_mini">
+	            </div>
+            </div>                
+				<div id="preg2" class="pregun">                      
+                    <h1 class="enun_pregs">¿Te sientes desprotegido?2</h1> <br>
+                    <select id="response2">
+                     <option>Escoger</option>
+                      <option value="0">Sí</option>
+                      <option value="1">No</option> 
+                    </select>
+                </div>
+				<div id="preg3" class="pregun">
+                    <h1 class="enun_pregs">¿Te sientes rechazado por los habitantes de este país?3</h1> <br>
+                    <select id="response3">
+                      <option>Escoger</option>
+                      <option value="0">Sí</option>
+                      <option value="1">No</option> 
+                    </select>
+                </div>
+				<div id="preg4" class="pregun">
+                    <h1 class="enun_pregs">¿Algún día te han negado la comida?4</h1> <br>
+                    <select id="response4">
+                      <option>Escoger</option>
+                      <option value="0">Sí</option>
+                      <option value="1">No</option>
+                    </select>
+                </div>
+				<div id="preg5" class="pregun">
+                    <h1 class="enun_pregs">¿Te niegan ir a la escuela?5</h1> <br>
+                    <select id="response5">
+                      <option>Escoger</option>
+                      <option value="0">Sí</option>
+                      <option value="1">No</option>
+                    </select>
+                </div>
+				<div id="preg6" class="pregun">
+                    <h1 class="enun_pregs">¿Te impiden recrearte?6</h1><br>
+                    <select id="response6">
+                      <option>Escoger</option>
+                      <option value="0">Sí</option>
+                      <option value="1">No</option> 
+                    </select>
+                </div>
+				<div id="preg7" class="pregun">
+                    <h1 class="enun_pregs">¿Eres ignorado en situaciones de peligro?7</h1> <br>
+                    <select id="response7">
+                      <option>Escoger</option>
+                      <option value="0">Sí</option>
+                      <option value="1">No</option> 
+                    </select>
+                </div>
+				<div id="preg8" class="pregun">
+                    <h1 class="enun_pregs">¿Te obligan o necesitas trabajar para ganar dinero?8</h1> <br>
+                    <select id="response8">
+                      <option>Escoger</option>
+                      <option value="0">Sí</option>
+                      <option value="1">No</option>
+                    </select>                    
+                </div>
+                
+        <div id="test">
+        </div>              	
+                
+          
+            <div id="recomendacion">
+            	
+            </div>
+           <!-- </div>
+				<div class="cont-preg9 cont-preg">
+					
+				</div>
+				<div class="cont-preg10 cont-preg">
+					
+				</div>
+				<div class="z1 cont-preg">
+					
+				</div>
+			</div>-->
+
+			<!--    Tabla resultados            -->
+		</section>
+	    <footer class="pie">
+	    	<p>Software para el acompañamiento y protección infantil</p>
+	    </footer>
+	
+
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+body{
+	background-color: #ddd;
+}
+
+.cabecera{
+	background-color: #000;
+	padding: .7em;
+	width: 100%;
+}
